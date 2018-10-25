@@ -1,0 +1,16 @@
+#Necessary for running microservice in docker-container
+#https://stackoverflow.com/questions/34439201/java-spring-will-not-talk-to-consul-when-run-as-a-docker-container
+#spring:
+#  cloud:
+#    consul:
+#      host: consul
+#      port: 8500
+
+#https://stackoverflow.com/questions/38690419/spring-boot-app-fail-to-link-consul-in-docker
+spring:
+  cloud:
+    consul:
+      host: consul
+      port: 8500
+      discovery:
+        prefer-ip-address: true
